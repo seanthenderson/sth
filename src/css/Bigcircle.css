@@ -1,0 +1,50 @@
+#big-circles {
+	text-align: center;
+	margin: 100px 0 0 0;
+	white-space: nowrap;
+}
+
+.big-circle {
+	width: 350px;
+	height: 350px;
+	display: inline-block;
+	margin: 0 auto;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 100%;
+	color: #333;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 50px;
+	text-align: center;
+	line-height: 350px;
+	cursor: pointer;
+}
+
+#blue.big-circle {
+	border: solid 10px #3B5472;
+	color: #3B5472;
+}
+#blue.big-circle:hover {
+	background-color: #3B5472;
+	color: #F1F0ED;
+}
+
+#orange.big-circle {
+	border: solid 10px #E46420;
+	color: #E46420;
+}
+#orange.big-circle:hover {
+	background-color: #E46420;
+	color: #F1F0ED;
+}
+
+#green.big-circle {
+	border: solid 10px #608B81;
+	color: #608B81;
+}
+#green.big-circle:hover {
+	background-color: #608B81;
+	color: #F1F0ED;
+}
+
