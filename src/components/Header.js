@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 const nameStyle = {
-	margin: '35px 0 10px 0',
+	margin: '55px 0 10px 0',
 	color: '#333',
 	fontFamily: '"Josefin Sans", sans-serif',
-	fontSize: '4.2rem',
+	fontSize: '4.35rem',
 	fontWeight: 'normal',
 	textAlign: 'center',
 	textShadow: '1px 1px 1px rgba(0,0,0,0.004)',
@@ -38,9 +38,9 @@ class Header extends Component {
 					 	Henderson
 					</h1>
 					<div style={titleStyle}>
-						<span class="caret">&lt; </span>
+						<span style={{color: 'rgba(0,0,0,0.4)', fontSize: '0.8rem'}}>&lt; </span>
 						{this.state.title}
-						<span class="caret"> &gt;</span>
+						<span style={{color: 'rgba(0,0,0,0.4)', fontSize: '0.8rem'}}> &gt;</span>
 					</div>
 				</a>
 			</header>

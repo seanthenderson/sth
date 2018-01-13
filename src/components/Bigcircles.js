@@ -6,8 +6,10 @@ class Bigcircle extends Component {
 		super(props);
 		this.state = {
 			title: 'Title',
-			color: '#333'
+			color: '#333',
+			animate: 'none'
 		}
+		this.animateCircles = this.animateCircles.bind(this);
 	}
 
 	addToCircle(title) {
@@ -22,24 +24,28 @@ class Bigcircle extends Component {
 	    this.setState({color: color});
 	}
 
+	animateCircles() {
+		this.setState ({
+		   	animate: 'rotate'
+		});
+	}
+
 	render() {
 		return (
-			<div class="big-circle" id={this.props.color}>
-				{this.props.title}
-			</div>
-		)
+			<div id={this.props.color} className={`big-circle ${this.state.animate}`} onClick={this.animateCircles}>{this.props.title}</div>
+		);
 	}
 }
 
 class Bigcircles extends Component {
 	render() {
 		return (
-			<div id="big-circles">
-				<Bigcircle title="recent work" color="blue"/>
+			<div style={{marginTop: '80px', whiteSpace: 'no-wrap'}}>
+				<Bigcircle title="recent work" color="blue" />
 				<Bigcircle title="about" color="orange" />
 				<Bigcircle title="contact" color="green" />
 			</div>
-		)
+		);
 	}
 }
 

@@ -1,13 +1,14 @@
 #big-circles {
 	text-align: center;
-	margin: 100px 0 0 0;
+	margin: 80px 0 0 0;
 	white-space: nowrap;
+	/*display: grid;
+	grid-template-columns: repeat(3, 1fr);*/
 }
 
 .big-circle {
 	width: 350px;
 	height: 350px;
-	display: inline-block;
 	margin: 0 auto;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -15,10 +16,11 @@
 	color: #333;
 	font-family: "Lato", sans-serif;
 	font-weight: 600;
-	font-size: 50px;
+	font-size: 3.2rem;
 	text-align: center;
 	line-height: 350px;
 	cursor: pointer;
+	display: inline-block;
 }
 
 #blue.big-circle {
