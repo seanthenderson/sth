@@ -25,14 +25,19 @@ class Bigcircle extends Component {
 	}
 
 	animateCircles() {
-		this.setState ({
-		   	animate: 'rotate'
-		});
+		const circle = document.querySelectorAll('.big-circle');
+		const circleContainer = document.querySelector('#circles-container');
+
+		circleContainer.classList.add('disappear');
+
+		for (let i=0;i<circle.length;i++) {
+			circle[i].classList.add('rotate');
+		} 
 	}
 
 	render() {
 		return (
-			<div id={this.props.color} className={`big-circle ${this.state.animate}`} onClick={this.animateCircles}>{this.props.title}</div>
+			<div id={this.props.color} className="big-circle" onClick={this.animateCircles}>{this.props.title}</div>
 		);
 	}
 }
@@ -40,7 +45,7 @@ class Bigcircle extends Component {
 class Bigcircles extends Component {
 	render() {
 		return (
-			<div style={{marginTop: '80px', whiteSpace: 'no-wrap'}}>
+			<div id="circles-container" style={{marginTop: '80px', whiteSpace: 'no-wrap'}}>
 				<Bigcircle title="recent work" color="blue" />
 				<Bigcircle title="about" color="orange" />
 				<Bigcircle title="contact" color="green" />
