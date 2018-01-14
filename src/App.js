@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './Global.css';
+import './css/MQs.css';
 import Header from './components/Header.js';
-import Bigcircles from './components/Bigcircles.js';
+import Circles from './components/Circles.js';
 import WorkSamples from './components/WorkSamples.js';
+import About from './components/About.js';
+import Contact from './components/Contact.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <Bigcircles />
+        <Circles />
         <WorkSamples />
+        <About />
+        <Contact />
       </div>
     );
   }

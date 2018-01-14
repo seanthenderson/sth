@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const nameStyle = {
-	margin: '55px 0 10px 0',
+	margin: '10vh 0 10px 0',
 	color: '#333',
 	fontFamily: '"Josefin Sans", sans-serif',
 	fontSize: '4.35rem',
@@ -12,6 +12,7 @@ const nameStyle = {
 }
 
 const titleStyle = {
+	marginBottom: '80px',
 	color: 'rgba(0,0,0,0.6)',
 	fontFamily: 'Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif',
 	fontSize: '1.1rem',
@@ -37,7 +38,7 @@ class Header extends Component {
 					 	<span style={{marginLeft: '-2px', color: '#608B81'}}>. </span>
 					 	Henderson
 					</h1>
-					<div style={titleStyle}>
+					<div style={titleStyle} id="headerTitle">
 						<span style={{color: 'rgba(0,0,0,0.4)', fontSize: '0.8rem'}}>&lt; </span>
 						{this.state.title}
 						<span style={{color: 'rgba(0,0,0,0.4)', fontSize: '0.8rem'}}> &gt;</span>
