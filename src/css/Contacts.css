@@ -1,0 +1,31 @@
+#contacts {
+	display: none;
+}
+.contact-type {
+	border: solid 3px rgba(0,0,0,0.3);
+	background-size: cover;
+}
+.contact-type.green {
+	background-image: url('http://seanthenderson.com/images/gray-email-icon.png');
+}
+.contact-type.green:hover {
+	background-image: url('http://seanthenderson.com/images/green-email-icon.png');
+	border: solid 3px rgba(96,139,129,1);
+	box-shadow: inset 0 0 10px rgba(96,139,129,1);
+}
+.contact-type.light-blue {
+	background-image: url('http://seanthenderson.com/images/gray-twitter-icon.png');
+}
+.contact-type.light-blue:hover {
+	background-image: url('http://seanthenderson.com/images/blue-twitter-icon.png');
+	border: solid 3px #33CCFF;
+	box-shadow: inset 0 0 10px #33CCFF;
+}
+.contact-type.dark-blue {
+	background-image: url('http://seanthenderson.com/images/gray-linkedin-icon.png');
+}
+.contact-type.dark-blue:hover {
+	background-image: url('http://seanthenderson.com/images/blue-linkedin-icon.png');
+	border: solid 3px #007BB6;
+	box-shadow: inset 0 0 10px #007BB6;
+}
