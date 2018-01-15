@@ -22,9 +22,9 @@ class Circle extends Component {
 	}
 
 	circleColor(color) {
-	    var color = this.state.color;
-	    color.push(color);
-	    this.setState({color: color});
+	    var colorStyle = this.state.color;
+	    colorStyle.push(color);
+	    this.setState({color: colorStyle});
 	}
 
 	animateCircles() {
