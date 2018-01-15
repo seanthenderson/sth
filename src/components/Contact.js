@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import '../css/Contacts.css';
 
 const contactStyle = {
-	margin: '80px auto 0',
+	margin: '0 auto 30px',
 }
 
 const contactTypeStyle = {
-	width: '20vw',
-	height: '20vw',
+	width: '25vw',
+	height: '25vw',
 	margin: '1vw',
 	borderRadius: '100%',
 	display: 'inline-block',

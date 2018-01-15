@@ -1,4 +1,5 @@
 #circles-container {
+	margin-bottom: 5vw;
 	transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 #circles-container.disappear {
@@ -61,13 +62,19 @@
 }
 
 @keyframes rollOut {
-  0% { transform: rotate(0deg); }
+  0% { 
+  	transform: rotate(0deg); 
+  }
 
-  10% { transform: rotate(-70deg); }
+  10% { 
+  	transform: rotate(-70deg); 
+  }
 
   45% {
     width: 23vw;
   	height: 23vw;
+  	margin-left: 1vw;
+	  margin-right: 1vw;
   	font-size: 3vw;
   	line-height: 23vw;
   	letter-spacing: inherit;
@@ -77,6 +84,8 @@
   49% {
 	  width: 50px;
 		height: 50px;
+		margin-left: 3px;
+	  margin-right: 3px;
 	  border-width: 3px;
 	  font-size: 14px;
 	  line-height: 50px;
@@ -105,3 +114,9 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+	.circle {
+		border-width: 5px !important;
+		font-size: 20px !important;
+	}
+}

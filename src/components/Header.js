@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Header.css';
 
 const nameStyle = {
 	margin: '10vh 0 10px 0',

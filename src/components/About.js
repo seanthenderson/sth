@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import '../css/About.css';
 
 const aboutStyle = {
 	width: '700px',
 	maxWidth: '100%',
-    margin: '80px auto',
+    margin: '0 auto 30px',
     display: 'none',
 }
 
