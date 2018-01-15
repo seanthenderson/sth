@@ -25,6 +25,7 @@ class Header extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			siteName: 'sth-rebuild',
 			title: 'Web Designer and Developer'
 		}
 	}
@@ -32,7 +33,7 @@ class Header extends Component {
 	render() {
 		return (
 			<header>
-				<a href="/">
+				<a href={this.state.siteName}>
 					<h1 style={nameStyle}>Sean T
 					 	<span style={{marginLeft: '-2px', color: '#3B5472'}}>.</span>
 					 	<span style={{marginLeft: '-2px', color: '#E46420'}}>.</span>
