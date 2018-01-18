@@ -17,7 +17,7 @@ class WorkSample extends Component {
 		return (
 			<div className="work-sample">
 				<img src={this.props.imageUrl} alt={this.props.altText} />
-				<a href={this.props.workLink}>
+				<a href={this.props.workLink} target="_blank">
 					<div className="work-sample-cover" title={this.props.hoverText}>	
 						<div className="work-sample-cover-text">
 							<p>{this.props.title}</p>
@@ -33,8 +33,8 @@ class WorkSamples extends Component {
 	render() {
 		return (
 			<section id="work-samples">
-				<WorkSample title="NMAAHC Breaking Ground" altText="NMAAHC museum" imageUrl="http://seanthenderson.com/images/nmaahc.jpg" workLink="https://www.smithsonianmag.com/smithsonian-institution/national-museum-african-american-history-and-culture-interactive-museum-tour/" hoverText="NMAAHC museum opening animation and interactive built with JavaScript" />
-				<WorkSample title="Press Uncuffed" altText="screenshot of pressuncuffed.org imprisoned journalists page" imageUrl="http://seanthenderson.com/images/pressuncuffed.jpg" workLink="https://www.smithsonianmag.com/smithsonian-institution/national-museum-african-american-history-and-culture-interactive-museum-tour/" hoverText="Press Uncuffed is a website focused on providing information on journalists who have been imprisoned for their role as reporters and investigators, as well as resources to help their cause. Built a custom WordPress theme with automated stats for duration of imprisonment and release info." />
+				<WorkSample title="NMAAHC Breaking Ground" altText="NMAAHC museum" imageUrl="http://seanthenderson.com/images/nmaahc.jpg" workLink="https://www.smithsonianmag.com/smithsonian-institution/national-museum-african-american-history-and-culture-interactive-museum-tour/" hoverText="Built an Interactive Tour of the National Museum of African American History and Culture for the museum opening." />
+				<WorkSample title="Press Uncuffed" altText="screenshot of pressuncuffed.org imprisoned journalists page" imageUrl="http://seanthenderson.com/images/pressuncuffed.jpg" workLink="http://pressuncuffed.org/" hoverText="Press Uncuffed is a website focused on providing information on journalists who have been imprisoned for their role as reporters and investigators, as well as resources to help their cause. Built a custom WordPress theme with automated stats for duration of imprisonment and release info." />
 				<WorkSample title="The Brothel Next Door" altText="screenshot of The Brothel Next Door homepage" imageUrl="http://seanthenderson.com/images/humantrafficking.png" workLink="http://cnsmaryland.org/human-trafficking/" hoverText="Designed and developed a website for Capital News Service that investigates the complex and disturbing issue of human trafficking, focusing on the Baltimore and Washington DC metropolitan region." />
 				<WorkSample title="American Journalism Review" altText="screenshot of ajr.org homepage" imageUrl="http://seanthenderson.com/images/ajr-updated.png" workLink="http://ajr.org" hoverText="Designed and developed a fully responsive news website that focuses on new media technologies and innovations. Custom backend interface and database integration to accommodate a large group of potential users and user-restriction levels. Cross-browser testing, SEO optimization and implementation of enhanced security features." />
 				<WorkSample title="Smithsonian Journeys" altText="screenshot of smithsonianjourneys.org homepage" imageUrl="http://seanthenderson.com/images/journeys.png" workLink="http://smithsonianjourneys.org" hoverText="Implemented new responsive design templates, built custom trip finder search tool." />
