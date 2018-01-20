@@ -40,7 +40,7 @@ class Header extends Component {
 					 	<span style={{marginLeft: '-2px', color: '#608B81'}}>. </span>
 					 	Henderson
 					</h1>
-					<div style={titleStyle} id="headerTitle">
+					<div style={titleStyle} className="headerTitle">
 						<span style={{color: 'rgba(0,0,0,0.4)', fontSize: '0.8rem'}}>&lt; </span>
 						{this.state.title}
 						<span style={{color: 'rgba(0,0,0,0.4)', fontSize: '0.8rem'}}> &gt;</span>

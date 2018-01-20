@@ -35,7 +35,7 @@ class ContactType extends Component {
 class Contact extends Component {
 	render() {
 		return (
-			<section id="contacts" style={contactStyle}>
+			<section className="contacts" style={contactStyle}>
 				<ContactType link="mailto:seanthenderson@gmail.com" color="green" />
 				<ContactType link="https://twitter.com/SeanTHenderson" color="light-blue" />
 				<ContactType link="https://www.linkedin.com/in/seanthenderson/" color="dark-blue" />

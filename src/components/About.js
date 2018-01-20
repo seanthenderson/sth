@@ -39,8 +39,8 @@ const aboutLinkStyle = {
 class About extends Component {
 	render() {
 		return (
-			<section id="about" style={aboutStyle}>
-				<div style={headshotStyle} id="headshot"></div>
+			<section className="about" style={aboutStyle}>
+				<div style={headshotStyle} className="headshot"></div>
 				<p style={aboutTextStyle}>Hi! My name is Sean T. Henderson. I'm a designer and developer specializing in building high quality, performant and responsive websites, interactive graphics and applications on multiple CMS platforms. My work has appeared in various publications, including: Smithsonian Magazine, The Baltimore Sun, Deadspin, Long Reads and Air &amp; Space Magazine. Check out my <a href="http://www.linkedin.com/in/seanthenderson" target="_blank" rel="noopener noreferrer" style={aboutLinkStyle}>LinkedIn profile</a> to learn more about me.</p>
 			</section>
 		);	

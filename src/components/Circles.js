@@ -29,11 +29,11 @@ class Circle extends Component {
 
 	animateCircles() {
 		const circle = document.querySelectorAll('.circle');
-		const circleContainer = document.querySelector('#circles-container');
-		const headerTitle = document.querySelector('#headerTitle');
-		const workSamples = document.querySelector('#work-samples');
-		const aboutSection = document.querySelector('#about');
-		const contactSection = document.querySelector('#contacts');
+		const circleContainer = document.querySelector('.circles-container');
+		const headerTitle = document.querySelector('.headerTitle');
+		const workSamples = document.querySelector('.work-samples');
+		const aboutSection = document.querySelector('.about');
+		const contactSection = document.querySelector('.contacts');
 
 		if (x === 0) {
 			circleContainer.classList.add('disappear');
@@ -91,7 +91,7 @@ class Circle extends Component {
 
 	render() {
 		return (
-			<div id={this.props.color} className={`circle ${this.state.active ? 'active': null}`} onClick={this.animateCircles}>{this.props.title}</div>
+			<div className={`circle ${this.state.active ? 'active': null} ${this.props.color}`} onClick={this.animateCircles}>{this.props.title}</div>
 		);
 	}
 }
@@ -99,7 +99,7 @@ class Circle extends Component {
 class Circles extends Component {
 	render() {
 		return (
-			<div id="circles-container" style={{whiteSpace: 'nowrap'}}>
+			<div className="circles-container" style={{whiteSpace: 'nowrap'}}>
 				<Circle title="work" color="blue" />
 				<Circle title="about" color="orange" />
 				<Circle title="contact" color="green" />

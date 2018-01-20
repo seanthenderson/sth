@@ -1,8 +1,8 @@
-#circles-container {
+.circles-container {
 	margin-bottom: 5vw;
 	transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-#circles-container.disappear {
+.circles-container.disappear {
 	margin-right: -3000px;
 }
 
@@ -24,32 +24,32 @@
 	display: inline-block;
 }
 
-#blue.circle {
+.blue.circle {
 	border: solid 10px #3B5472;
 	color: #3B5472;
 }
-#blue.circle:hover,
-#blue.circle.active  {
+.blue.circle:hover,
+.blue.circle.active  {
 	background-color: #3B5472;
 	color: #F1F0ED;
 }
 
-#orange.circle {
+.orange.circle {
 	border: solid 10px #E46420;
 	color: #E46420;
 }
-#orange.circle:hover,
-#orange.circle.active {
+.orange.circle:hover,
+.orange.circle.active {
 	background-color: #E46420;
 	color: #F1F0ED;
 }
 
-#green.circle {
+.green.circle {
 	border: solid 10px #608B81;
 	color: #608B81;
 }
-#green.circle:hover,
-#green.circle.active {
+.green.circle:hover,
+.green.circle.active {
 	background-color: #608B81;
 	color: #F1F0ED;
 }

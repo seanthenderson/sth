@@ -32,7 +32,7 @@ class WorkSample extends Component {
 class WorkSamples extends Component {
 	render() {
 		return (
-			<section id="work-samples">
+			<section className="work-samples">
 				<WorkSample title="NMAAHC Breaking Ground" altText="NMAAHC museum" imageUrl="http://seanthenderson.com/images/nmaahc.jpg" workLink="https://www.smithsonianmag.com/smithsonian-institution/national-museum-african-american-history-and-culture-interactive-museum-tour/" hoverText="Built an Interactive Tour of the National Museum of African American History and Culture for the museum opening." />
 				<WorkSample title="Press Uncuffed" altText="screenshot of pressuncuffed.org imprisoned journalists page" imageUrl="http://seanthenderson.com/images/pressuncuffed.jpg" workLink="http://pressuncuffed.org/" hoverText="Press Uncuffed is a website focused on providing information on journalists who have been imprisoned for their role as reporters and investigators, as well as resources to help their cause. Built a custom WordPress theme with automated stats for duration of imprisonment and release info." />
 				<WorkSample title="The Brothel Next Door" altText="screenshot of The Brothel Next Door homepage" imageUrl="http://seanthenderson.com/images/humantrafficking.png" workLink="http://cnsmaryland.org/human-trafficking/" hoverText="Designed and developed a website for Capital News Service that investigates the complex and disturbing issue of human trafficking, focusing on the Baltimore and Washington DC metropolitan region." />
