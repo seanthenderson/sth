@@ -1,5 +1,93 @@
 import React, { Component } from 'react';
-import '../css/WorkSamples.css';
+import styled from 'styled-components';
+
+const WorkSamplesWrapper = styled.section`
+	max-width: 1000px;
+	margin: 0 auto 30px;
+	text-align: center;
+	display: none;
+	@media (max-width: 1100px) {
+		width: 100%;
+	}
+`;
+
+const WorkSampleWrapper = styled.div`
+	margin: 24px 11px 0 11px;
+	display: inline-block;
+	&:hover {
+		box-shadow: 0px 0px 10px #3B5472;
+	}
+	@media (max-width: 1100px) {
+		margin: 20px 10px 0 10px;
+		box-shadow: 0 0 10px #999;
+	}
+`; 
+
+const WorkSampleLink = styled.a`
+	@media (max-width: 1100px) {
+		position: relative;
+	}
+`;
+
+const WorkSampleImage = styled.img`
+	width: 300px;
+	height: 200px;
+	position: relative;
+	z-index: 1;
+`;
+
+const WorkSampleCover = styled.div`
+	width: 300px;
+	height: 187px;
+	position: relative;
+	margin: -205px 0 0 0;
+	padding: 15px 0 0 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 2;
+	transition: opacity .3s;
+	&:hover {
+		opacity: 0;
+	}
+	@media (max-width: 1100px) {
+		height: 38px;
+		position: absolute;
+		bottom: 0;
+		&:hover {
+			opacity: 1;
+		}
+	}
+`;
+
+const WorkSampleTextWrapper = styled.div`
+	width: 170px;
+	height: 170px;
+	margin: 0 auto;
+	margin-top: -3px;
+	border: solid 5px #DCDCDC;
+	border-radius: 100%;
+	color: #FFFFFF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 23px;
+	display: table;
+	@media (max-width: 1100px) {
+		width: auto;
+		height: auto;
+		border: none;
+		font-size: 20px;
+	}
+`;
+
+const WorkSampleText = styled.p`
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 30px;
+	padding: 0 20px 0 20px;
+	@media (max-width: 1100px) {
+		padding: 0 14px;
+		line-height: 30px;
+	}
+`;
 
 class WorkSample extends Component {
 	constructor(props) {
@@ -15,16 +103,16 @@ class WorkSample extends Component {
 
 	render() {
 		return (
-			<div className="work-sample">
-				<img src={this.props.imageUrl} alt={this.props.altText} />
-				<a href={this.props.workLink} target="_blank">
-					<div className="work-sample-cover" title={this.props.hoverText}>	
-						<div className="work-sample-cover-text">
-							<p>{this.props.title}</p>
-						</div>
-					</div>
-				</a>
-			</div>
+			<WorkSampleWrapper>
+				<WorkSampleImage src={this.props.imageUrl} alt={this.props.altText} />
+				<WorkSampleLink href={this.props.workLink} target="_blank">
+					<WorkSampleCover title={this.props.hoverText}>	
+						<WorkSampleTextWrapper className="work-sample-cover-text">
+							<WorkSampleText>{this.props.title}</WorkSampleText>
+						</WorkSampleTextWrapper>
+					</WorkSampleCover>
+				</WorkSampleLink>
+			</WorkSampleWrapper>
 		);
 	}
 }
@@ -32,7 +120,7 @@ class WorkSample extends Component {
 class WorkSamples extends Component {
 	render() {
 		return (
-			<section className="work-samples">
+			<WorkSamplesWrapper className="work-samples">
 				<WorkSample title="NMAAHC Breaking Ground" altText="NMAAHC museum" imageUrl="http://seanthenderson.com/images/nmaahc.jpg" workLink="https://www.smithsonianmag.com/smithsonian-institution/national-museum-african-american-history-and-culture-interactive-museum-tour/" hoverText="Built an Interactive Tour of the National Museum of African American History and Culture for the museum opening." />
 				<WorkSample title="Press Uncuffed" altText="screenshot of pressuncuffed.org imprisoned journalists page" imageUrl="http://seanthenderson.com/images/pressuncuffed.jpg" workLink="http://pressuncuffed.org/" hoverText="Press Uncuffed is a website focused on providing information on journalists who have been imprisoned for their role as reporters and investigators, as well as resources to help their cause. Built a custom WordPress theme with automated stats for duration of imprisonment and release info." />
 				<WorkSample title="The Brothel Next Door" altText="screenshot of The Brothel Next Door homepage" imageUrl="http://seanthenderson.com/images/humantrafficking.png" workLink="http://cnsmaryland.org/human-trafficking/" hoverText="Designed and developed a website for Capital News Service that investigates the complex and disturbing issue of human trafficking, focusing on the Baltimore and Washington DC metropolitan region." />
@@ -47,7 +135,7 @@ class WorkSamples extends Component {
 				<WorkSample title="Sea Level Rise in Maryland" altText="screenshot of CNSMaryland's sea level rise interactive map" imageUrl="http://seanthenderson.com/images/cns-slr.png" workLink="http://cnsmaryland1.org/sealevelrise" hoverText="Built an interactive Google Map that displays the potential for water encroachment due to future sea level increases. Built and designed a custom WordPress site to house the project." />
 				<WorkSample title="Unclaimed Property" altText="screenshot of Baltimore Sun's investigative special: Does the State of Maryland Owe You Money?" imageUrl="http://seanthenderson.com/images/balt-sun.png" workLink="http://data.baltimoresun.com/unclaimed-property" hoverText="Built a frontend interface to query a database of unclaimed property in the state of Maryland, so users can search themselves or others to see if the state owes them $$$." />
 				<WorkSample title="Guns in the News" altText="screenshot of CNS Maryland's special interactive on guns in the news" imageUrl="http://seanthenderson.com/images/cns-guns.png" workLink="http://cnsmaryland1.org/2013/02/15/graphic-guns-in-the-news/" hoverText="Built an interactive graphic to accompany a text article discussing recent shootings and the guns that were used in each case." />
-			</section>
+			</WorkSamplesWrapper>
 		);
 	}
 }
