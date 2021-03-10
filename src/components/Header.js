@@ -32,7 +32,7 @@ class Header extends Component {
 	render() {
 		return (
 			<header>
-				<a href="/">
+				<a href="//seanthenderson.github.io/sth/">
 					<h1 style={nameStyle}>Sean T
 					 	<span style={{marginLeft: '-2px', color: '#3B5472'}}>.</span>
 					 	<span style={{marginLeft: '-2px', color: '#E46420'}}>.</span>
